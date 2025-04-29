@@ -10,6 +10,10 @@
 #define MAIN_H
 
 #include <iostream>
+#include <string>
+#include "livre.h"
+#include "livre.cpp"
+
 
 using namespace std;
 
