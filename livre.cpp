@@ -1,19 +1,21 @@
 #include "livre.h"
 
-Livre::Livre(string title, string autor, string year, bool isAvalible) : title_(title), autor_(autor),  year_(year), isAvalible_(isAvalible) {
-    cout << "Class make" << endl;
-};
+Livre::Livre(string title, string autor, string year, bool isAvalible) : title_(title), autor_(autor),  year_(year), isAvalible_(isAvalible) {}
 
-string Livre::getAutor() {
+string Livre::getAutor() const{
     return autor_;
 }
-string Livre::getTitle() {
+string Livre::getTitle() const{
     return title_;
 }
-string Livre::getYear() {
+string Livre::getYear() const{
     return year_;
 }
 
-string Livre::getPrintStatus() {
-    return (isAvalible_ ? "Avalible" : " not avalible" );
+bool Livre::getStatus() const{
+    return isAvalible_;
+}
+
+void Livre::switchStatus() {
+    isAvalible_ = !isAvalible_;
 }

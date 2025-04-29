@@ -7,9 +7,9 @@ using namespace std;
 class CDI {
     public:
         void addBook(Livre _newBook);
-        void deleteBook();
-        void searchBooks();
-        void TakeOrSend();
+        void deleteBook(string _newBook);
+        bool searchBooks(string bookName);
+        void TakeOrSend(string _newBook);
         void ShowBooks();
         CDI();
     

@@ -7,18 +7,19 @@ using namespace std;
 
 class Livre {
     public:
-        string getAutor();
-        string getTitle();
-        string getYear();
-        string getPrintStatus();
         Livre(string title, string autor, string year, bool isAvalible);
+        string getAutor()const;
+        string getTitle()const;
+        string getYear()const;
+        bool getStatus()const;
+        void switchStatus();
+        
     
     private:
-        string autor_ = "N/A";
-        string title_ = "N/A";
-        string year_ = "N/A";
-        bool isAvalible_ = true;
-        
+        string autor_;
+        string title_;
+        string year_;
+        bool isAvalible_;
     };
 
 
