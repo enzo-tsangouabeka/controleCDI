@@ -11,12 +11,15 @@
 
 #include <iostream>
 #include <string>
+#include <limits> // Pour ignorer les mauvaises entrées (int)
 #include "livre.h"
 #include "livre.cpp"
 
 
 using namespace std;
 
+int cheakTypeEntire(int& _entire);
+void lunchMethode(int _methodeMode);
 
 
 #endif //MAIN_H
